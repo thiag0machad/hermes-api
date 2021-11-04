@@ -1,6 +1,6 @@
 import { transporter } from '../configs/email'
 
-export const contactModel = async ({ name, email, body }: Email) => {
+export const sendMailModel = async ({ name, email, body }: Email) => {
   try {
     return transporter.sendMail({
       from: process.env.USER,
