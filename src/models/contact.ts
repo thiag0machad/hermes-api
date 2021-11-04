@@ -13,7 +13,7 @@ export const contactModel = async ({ name, email, body }: Email) => {
       to: process.env.USER,
       replyTo: email,
       subject: `[CONTATO - thiagomachado.vercel.app] ${name} enviou uma mensagem`,
-      text: body,
+      text: body
     })
   } catch (err) {
     console.log(err)
