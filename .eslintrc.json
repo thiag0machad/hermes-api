@@ -3,7 +3,7 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["standard"],
+  "extends": ["standard", "eslint:recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2021,
@@ -11,5 +11,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "no-undef": "off",
+    "no-unused-vars": "off"
   }
 }
