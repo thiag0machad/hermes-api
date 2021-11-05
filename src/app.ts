@@ -1,12 +1,12 @@
 import 'dotenv/config'
 import express from 'express'
-import { router } from './routes/contact'
+import routes from './routes'
 
 const app = express()
 
 app.use(express.json())
-app.use(router)
+app.use(routes)
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Bem Vindo!'))
 
 export { app }
