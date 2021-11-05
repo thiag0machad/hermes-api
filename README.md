@@ -9,12 +9,12 @@
 - ESLint
 - Dotenv
 
-# Funcionalidades Prontas
+# Funcionalidades prontas
 
 - CRUD /users
 - C*** /contact
 
-# Funcionalidades em andamento
+# Funcionalidades em desenvolvimento
 - 
 
 # Funcionalidades a fazer
