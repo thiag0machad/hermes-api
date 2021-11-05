@@ -26,7 +26,7 @@ export const readUsersController = async (req: Request, res: Response) => {
 
 export const updateUserController = async (req: Request, res: Response) => {
   try {
-    const user = await updateUserService(req.body)
+    const user = await updateUserService(req.params.id, req.body)
     return res.status(201).json(user)
   } catch (err) {
     return res.status(400).json(err)
@@ -35,7 +35,7 @@ export const updateUserController = async (req: Request, res: Response) => {
 
 export const deleteUserController = async (req: Request, res: Response) => {
   try {
-    const user = await deleteUserService(req.body)
+    const user = await deleteUserService(req.params.id)
     return res.status(200).json(user)
   } catch (err) {
     return res.status(400).json(err)

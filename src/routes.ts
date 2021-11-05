@@ -13,7 +13,7 @@ router.post('/contact', sendEmailController)
 
 router.post('/users', createUserController)
 router.get('/users', readUsersController)
-router.put('/users', updateUserController)
-router.delete('/users', deleteUserController)
+router.put('/users/:id', updateUserController)
+router.delete('/users/:id', deleteUserController)
 
 export default router

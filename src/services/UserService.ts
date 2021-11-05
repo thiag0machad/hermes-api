@@ -21,17 +21,20 @@ export const readUsersService = () => {
   }
 }
 
-export const updateUserService = ({ name, email, password }: User) => {
+export const updateUserService = (
+  id: string,
+  { name, email, password }: User
+) => {
   try {
-    return updateUserModel({ name, email, password })
+    return updateUserModel(id, { name, email, password })
   } catch (err) {
     console.log(err)
   }
 }
 
-export const deleteUserService = ({ name, email, password }: User) => {
+export const deleteUserService = (id: string) => {
   try {
-    return deleteUserModel({ name, email, password })
+    return deleteUserModel(id)
   } catch (err) {
     console.log(err)
   }

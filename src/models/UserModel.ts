@@ -22,11 +22,14 @@ export const readUsersModel = () => {
   }
 }
 
-export const updateUserModel = ({ name, email, password }: User) => {
+export const updateUserModel = (
+  id: string,
+  { name, email, password }: User
+) => {
   try {
     return database.user.update({
       where: {
-        email
+        id
       },
       data: {
         name,
@@ -39,11 +42,11 @@ export const updateUserModel = ({ name, email, password }: User) => {
   }
 }
 
-export const deleteUserModel = ({ name, email, password }: User) => {
+export const deleteUserModel = (id: string) => {
   try {
     return database.user.delete({
       where: {
-        email
+        id
       }
     })
   } catch (err) {
