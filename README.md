@@ -8,6 +8,8 @@
 - Prettier
 - ESLint
 - Dotenv
+- UUID
+- TS Node Dev
 
 # Funcionalidades prontas
 
