@@ -7,6 +7,7 @@ import {
   readUsersController,
   updateUserController
 } from './controllers/UserController'
+import { authenticateController } from './controllers/AuthController'
 
 const router = Router()
 
@@ -17,6 +18,8 @@ router.get('/users', readUsersController)
 router.put('/users/:id', updateUserController)
 router.delete('/users/:id', deleteUserController)
 
-router.get('/currency/usd-brl/:value', convertUsdToBrlController)
+router.get('/currencies/usd-brl/:value', convertUsdToBrlController)
+
+router.post('/auth', authenticateController)
 
 export default router

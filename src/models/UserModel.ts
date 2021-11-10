@@ -1,12 +1,15 @@
 import database from '../configs/database'
+import bcrypt from 'bcryptjs'
 
 export const createUserModel = ({ name, email, password }: User) => {
+  const hashPassword = bcrypt.hashSync(password, 8)
+
   try {
     return database.user.create({
       data: {
         name,
         email,
-        password
+        password: hashPassword
       }
     })
   } catch (err) {
