@@ -22,6 +22,6 @@ export const authenticateService = async ({ email, password }: User) => {
 
     return authenticateModel(user.id, { email, password })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }

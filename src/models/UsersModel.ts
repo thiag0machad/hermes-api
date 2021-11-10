@@ -13,7 +13,7 @@ export const createUserModel = ({ name, email, password }: User) => {
       }
     })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
 
@@ -21,7 +21,7 @@ export const readUsersModel = () => {
   try {
     return database.user.findMany()
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
 
@@ -41,7 +41,7 @@ export const updateUserModel = (
       }
     })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
 
@@ -53,6 +53,6 @@ export const deleteUserModel = (id: string) => {
       }
     })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }

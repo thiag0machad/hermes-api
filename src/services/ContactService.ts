@@ -4,6 +4,6 @@ export const sendEmailService = async ({ name, email, body }: Email) => {
   try {
     return sendMailModel({ name, email, body })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }

@@ -9,7 +9,7 @@ export const createUserService = ({ name, email, password }: User) => {
   try {
     return createUserModel({ name, email, password })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
 
@@ -17,7 +17,7 @@ export const readUsersService = () => {
   try {
     return readUsersModel()
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
 
@@ -28,7 +28,7 @@ export const updateUserService = (
   try {
     return updateUserModel(id, { name, email, password })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
 
@@ -36,6 +36,6 @@ export const deleteUserService = (id: string) => {
   try {
     return deleteUserModel(id)
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }

@@ -26,6 +26,6 @@ export const convertUsdToBrlModel = async (value: string) => {
 
     return total
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }

@@ -39,14 +39,15 @@ Por fim, a aplicação estará disponível em `http://localhost:3000`
   - POST - Criação de um usuário.
   - GET - Lista todos os usuários.
   - `/users/:id`
-  - PUT - Atualiza um usuario através do ID recebido na rota.
-  - DELETE - Deleta um usuario através do ID recebido na rota.
+    - PUT - Atualiza um usuario através do ID recebido na rota.
+    - DELETE - Deleta um usuario através do ID recebido na rota.
 - `/contact`
   - POST - Envia email para si mesmo, com o intuído de ser integrado em um formulário de contato.
 - `/currencies/usd-brl/:value`
   - GET - Converte o valor em dólar recebido na rota e converte para reais.
 - `/auth`
   - POST - Autentica o usuário.
+Você pode baixar o arquivo `Hermes.postman_collection.json` para visualizar as requests no Postman.
 
 ## 📄 Licença
 

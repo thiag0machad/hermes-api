@@ -10,6 +10,6 @@ export const authenticateModel = async (id: string, { email }: User) => {
       token: jwt.sign({ id }, 'secret', { expiresIn: '1d' })
     }
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }

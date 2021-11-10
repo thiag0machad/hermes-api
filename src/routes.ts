@@ -17,7 +17,7 @@ const router = Router()
 router.post('/contact', sendEmailController)
 
 router.post('/users', createUserController)
-router.get('/users', authMiddleware, readUsersController)
+router.get('/users', readUsersController)
 router.put('/users/:id', updateUserController)
 router.delete('/users/:id', deleteUserController)
 

@@ -10,6 +10,6 @@ export const sendMailModel = async ({ name, email, body }: Email) => {
       text: body
     })
   } catch (err) {
-    console.log(err)
+    throw new Error(err)
   }
 }
