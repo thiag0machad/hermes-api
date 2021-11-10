@@ -17,6 +17,6 @@ router.get('/users', readUsersController)
 router.put('/users/:id', updateUserController)
 router.delete('/users/:id', deleteUserController)
 
-router.get('/usd-brl/:value', convertUsdToBrlController)
+router.get('/currency/usd-brl/:value', convertUsdToBrlController)
 
 export default router
