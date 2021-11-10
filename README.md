@@ -47,7 +47,7 @@ Por fim, a aplicação estará disponível em `http://localhost:3000`
   - GET - Converte o valor em dólar recebido na rota e converte para reais.
 - `/auth`
   - POST - Autentica o usuário.
-Você pode baixar o arquivo `Hermes.postman_collection.json` para visualizar as requests no Postman.
+Você pode abrir o arquivo `Hermes.postman_collection.json` para visualizar as requests no Postman.
 
 ## 📄 Licença
 
