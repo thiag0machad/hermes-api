@@ -3,7 +3,7 @@ import {
   deleteUserModel,
   readUsersModel,
   updateUserModel
-} from '../models/UserModel'
+} from '../models/UsersModel'
 
 export const createUserService = ({ name, email, password }: User) => {
   try {

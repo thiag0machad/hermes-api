@@ -1,13 +1,13 @@
 import { Router } from 'express'
 
 import { sendEmailController } from './controllers/ContactController'
-import { convertUsdToBrlController } from './controllers/BrlController'
+import { convertUsdToBrlController } from './controllers/CurrenciesController'
 import {
   createUserController,
   deleteUserController,
   readUsersController,
   updateUserController
-} from './controllers/UserController'
+} from './controllers/UsersController'
 import { authenticateController } from './controllers/AuthController'
 
 import { authMiddleware } from './middlewares/AuthMiddleware'

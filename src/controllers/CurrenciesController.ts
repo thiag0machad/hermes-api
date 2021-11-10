@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { convertUsdToBrlService } from '../services/BrlService'
+import { convertUsdToBrlService } from '../services/CurrenciesService'
 
 export const convertUsdToBrlController = async (
   req: Request,

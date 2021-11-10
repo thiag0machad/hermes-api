@@ -1,4 +1,4 @@
-import { convertUsdToBrlModel } from '../models/BrlModel'
+import { convertUsdToBrlModel } from '../models/CurrenciesModel'
 
 export const convertUsdToBrlService = (value: string) => {
   try {

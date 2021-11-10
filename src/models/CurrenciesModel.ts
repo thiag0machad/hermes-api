@@ -17,9 +17,9 @@ export const convertUsdToBrlModel = async (value: string) => {
     const usdReplaced = usd.replace(',', '.')
 
     const total = {
-      Dolar: usdReplaced,
-      Real: value,
-      Convertido: `R$ ${(parseFloat(usdReplaced) * parseFloat(value)).toFixed(
+      dollar: usdReplaced,
+      real: value,
+      converted: `R$ ${(parseFloat(usdReplaced) * parseFloat(value)).toFixed(
         2
       )}`
     }

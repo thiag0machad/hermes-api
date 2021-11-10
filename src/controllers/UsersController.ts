@@ -3,7 +3,7 @@ import {
   deleteUserService,
   readUsersService,
   updateUserService
-} from '../services/UserService'
+} from '../services/UsersService'
 import { Response, Request } from 'express'
 
 export const createUserController = async (req: Request, res: Response) => {
