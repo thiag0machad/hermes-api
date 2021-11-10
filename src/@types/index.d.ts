@@ -9,3 +9,9 @@ interface User {
   email?: string
   password?: string
 }
+
+interface TokenPayload {
+  id?: string
+  iat?: number
+  exp?: number
+}
