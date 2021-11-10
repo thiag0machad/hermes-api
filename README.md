@@ -17,6 +17,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Jest](https://jestjs.io/pt-BR/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
+- [Selenium](https://www.selenium.dev/)
+- [Babel](https://babeljs.io/)
 
 ## 💻 Projeto
 
