@@ -19,6 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [ESLint](https://eslint.org/)
 - [Selenium](https://www.selenium.dev/)
 - [Babel](https://babeljs.io/)
+- [JsonWebToken](https://jwt.io/)
 
 ## 💻 Projeto
 
@@ -35,7 +36,7 @@ Por fim, a aplicação estará disponível em `http://localhost:3000`
 
 ## Rotas
 - `/users`
-  - POST - Criação de um usuário passando um json com {name, email, password}.
+  - POST - Criação de um usuário.
   - GET - Lista todos os usuários.
   - `/users/:id`
   - PUT - Atualiza um usuario através do ID recebido na rota.
@@ -44,6 +45,8 @@ Por fim, a aplicação estará disponível em `http://localhost:3000`
   - POST - Envia email para si mesmo, com o intuído de ser integrado em um formulário de contato.
 - `/currencies/usd-brl/:value`
   - GET - Converte o valor em dólar recebido na rota e converte para reais.
+- `/auth`
+  - POST - Autentica o usuário.
 
 ## 📄 Licença
 
