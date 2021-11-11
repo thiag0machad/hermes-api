@@ -29,6 +29,7 @@ router.post('/auth', authenticateController)
 
 router.post(
   '/bucket/upload',
+  authMiddleware,
   uploadMiddleware.array('files', 10),
   uploadFilesController
 )
