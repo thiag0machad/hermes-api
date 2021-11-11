@@ -16,10 +16,10 @@ const router = Router()
 
 router.post('/contact', sendEmailController)
 
-router.post('/users', createUserController)
+router.post('/users', authMiddleware, createUserController)
 router.get('/users', readUsersController)
-router.put('/users/:id', updateUserController)
-router.delete('/users/:id', deleteUserController)
+router.put('/users/:id', authMiddleware, updateUserController)
+router.delete('/users/:id', authMiddleware, deleteUserController)
 
 router.get('/currencies/usd-brl/:value', convertUsdToBrlController)
 
