@@ -20,6 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Selenium](https://www.selenium.dev/)
 - [Babel](https://babeljs.io/)
 - [JsonWebToken](https://jwt.io/)
+- [AWS SDK](https://aws.amazon.com/pt/sdk-for-javascript/)
 
 ## 💻 Projeto
 
@@ -48,6 +49,8 @@ Por fim, a aplicação estará disponível em `http://localhost:3000`
 - `/auth`
   - POST - Autentica o usuário.
 Você pode abrir o arquivo `Hermes.postman_collection.json` para visualizar as requests no Postman.
+- `/bucket/upload`
+  - POST - Upload de arquivos direto para o Amazon S3.
 
 ## 📄 Licença
 
