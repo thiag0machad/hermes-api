@@ -6,6 +6,6 @@ export const sendEmailController = async (req: Request, res: Response) => {
     const email = await sendMailModel(req.body)
     return res.status(200).json(email)
   } catch (err) {
-    return res.status(400).json(err)
+    return res.status(400).json({ error: err.message })
   }
 }

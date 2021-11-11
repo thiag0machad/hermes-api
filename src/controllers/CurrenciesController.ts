@@ -9,6 +9,6 @@ export const convertUsdToBrlController = async (
     const value = await convertUsdToBrlModel(req.params.value)
     return res.status(200).json(value)
   } catch (err) {
-    return res.status(400).json(err)
+    return res.status(400).json({ error: err.message })
   }
 }
