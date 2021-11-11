@@ -1,14 +1,14 @@
 import {
-  createUserService,
-  deleteUserService,
-  readUsersService,
-  updateUserService
-} from '../services/UsersService'
+  createUserModel,
+  deleteUserModel,
+  readUsersModel,
+  updateUserModel
+} from '../models/UsersModel'
 import { Response, Request } from 'express'
 
 export const createUserController = async (req: Request, res: Response) => {
   try {
-    const user = await createUserService(req.body)
+    const user = await createUserModel(req.body)
     return res.status(201).json(user)
   } catch (err) {
     return res.status(400).json(err)
@@ -17,7 +17,7 @@ export const createUserController = async (req: Request, res: Response) => {
 
 export const readUsersController = async (req: Request, res: Response) => {
   try {
-    const users = await readUsersService()
+    const users = await readUsersModel()
     return res.status(200).json(users)
   } catch (err) {
     return res.status(400).json(err)
@@ -26,7 +26,7 @@ export const readUsersController = async (req: Request, res: Response) => {
 
 export const updateUserController = async (req: Request, res: Response) => {
   try {
-    const user = await updateUserService(req.params.id, req.body)
+    const user = await updateUserModel(req.params.id, req.body)
     return res.status(201).json(user)
   } catch (err) {
     return res.status(400).json(err)
@@ -35,7 +35,7 @@ export const updateUserController = async (req: Request, res: Response) => {
 
 export const deleteUserController = async (req: Request, res: Response) => {
   try {
-    const user = await deleteUserService(req.params.id)
+    const user = await deleteUserModel(req.params.id)
     return res.status(200).json(user)
   } catch (err) {
     return res.status(400).json(err)
